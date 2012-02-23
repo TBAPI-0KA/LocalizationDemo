@@ -1,0 +1,23 @@
+﻿@model LanguageSwitcherModel
+
+<div id="flags">
+	@if (Model.RenderForms)
+	{
+		foreach (string language in Model.Languages)
+		{
+			using (Html.BeginForm("ChangeLanguage", "Home", FormMethod.Post, new { @class = "flag" }))
+			{
+				@Html.Hidden("Language", language, new { id = String.Format("Language_{0}", language) })
+				@Html.Hidden("ReturnUrl", Model.Url, new { id = String.Format("ReturnUrl_{0}", language) })
+				<input id="@language" type="submit" name="@language" value="" class="flag-image" />
+			}
+		}
+	}
+	else
+	{
+		foreach (string language in Model.Languages)
+		{
+			<a id="@language" class="flag flag-image" href="@String.Format("/{0}{1}", language, Model.Url)"></a>
+		}
+	}
+</div>

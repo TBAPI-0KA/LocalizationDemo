@@ -1,0 +1,9 @@
+﻿@{
+	ViewBag.Title = "Localization Demo";
+}
+
+<h2>Localization Demo</h2>
+
+@Localization.LocalizedString
+<br/>
+@Html.ActionLink(Localization.DeleteCookiesAndReloadPage, "Index", "Redirect") @* See comment at RedirectController *@
