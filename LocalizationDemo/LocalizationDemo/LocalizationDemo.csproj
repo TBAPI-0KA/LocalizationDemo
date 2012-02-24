@@ -79,9 +79,9 @@
     <Compile Include="Utils\CookieConstants.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Img\Flags\en.png" />
-    <Content Include="Content\Img\Flags\ru.png" />
-    <Content Include="Content\Img\Flags\uk.png" />
+    <Content Include="Content\Img\Flags\En.png" />
+    <Content Include="Content\Img\Flags\Ru.png" />
+    <Content Include="Content\Img\Flags\Uk.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Web.config" />

@@ -9,7 +9,7 @@ namespace LocalizationDemo.Models
 	{
 		public static List<string> Get()
 		{
-			return new List<string> { "en", "ru", "uk" }; // Get the list from DB, cache, or any other data source
+			return new List<string> { "En", "Ru", "Uk" }; // Get the list from DB, cache, or any other data source
 		}
 	}
 }

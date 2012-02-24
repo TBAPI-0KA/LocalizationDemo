@@ -25,7 +25,7 @@ namespace LocalizationDemo.Controllers
 				HttpCookie languageCookie = Request.Cookies.Get(CookieConstants.Language);
 				object languageParameterObj = requestContext.RouteData.Values[CookieConstants.Language.ToLower()];
 
-				List<string> languagesList = LanguagesList.Get();
+				IEnumerable<string> languagesList = LanguagesList.Get().Select(x => x.ToLower());
 				string language = languagesList.First(); // Default language;
 
 				if (languageCookie == null)

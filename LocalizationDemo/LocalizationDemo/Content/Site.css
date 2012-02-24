@@ -34,19 +34,19 @@ header, footer, nav, section
 	height: 24px;
 }
 
-#en
+#En
 {
-	background-image: url('/Content/Img/Flags/en.png');
+	background-image: url('/Content/Img/Flags/En.png');
 }
 
-#ru
+#Ru
 {
-	background-image: url('/Content/Img/Flags/ru.png');
+	background-image: url('/Content/Img/Flags/Ru.png');
 }
 
-#uk
+#Uk
 {
-	background-image: url('/Content/Img/Flags/uk.png');
+	background-image: url('/Content/Img/Flags/Uk.png');
 }
 
 /* Styles for basic forms
